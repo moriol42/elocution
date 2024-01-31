@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="elocution">
+	<schema id="com.github.moriol42.elocution" path="/com/github/moriol42/elocution/">
+	</schema>
+</schemalist>

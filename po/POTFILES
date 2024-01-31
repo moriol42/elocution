@@ -1,0 +1,6 @@
+data/com.github.moriol42.elocution.desktop.in
+data/com.github.moriol42.elocution.metainfo.xml.in
+data/com.github.moriol42.elocution.gschema.xml
+src/main.py
+src/window.py
+src/window.ui
