@@ -1,0 +1,7 @@
+/subprojects/blueprint-compiler
+.flatpak-builder/
+__pycache__/
+_build/
+build/
+builddir/
+build-dir/
