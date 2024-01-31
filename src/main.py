@@ -53,10 +53,10 @@ class ElocutionApplication(Adw.Application):
         about = Adw.AboutWindow(transient_for=self.props.active_window,
                                 application_name='elocution',
                                 application_icon='com.github.moriol42.elocution',
-                                developer_name='Mathieu',
+                                developer_name='Mathieu Oriol',
                                 version='0.1.0',
-                                developers=['Mathieu'],
-                                copyright='© 2024 Mathieu')
+                                developers=['Mathieu Oriol'],
+                                copyright='© 2024 Mathieu Oriol')
         about.present()
 
     def on_preferences_action(self, widget, _):
