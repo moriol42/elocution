@@ -24,7 +24,5 @@ from gi.repository import Gtk
 class ElocutionWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'ElocutionWindow'
 
-    label = Gtk.Template.Child()
-
     def __init__(self, **kwargs):
         super().__init__(**kwargs)

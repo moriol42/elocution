@@ -1,4 +1,5 @@
 using Gtk 4.0;
+using Adw 1;
 
 template $ElocutionWindow : $AdwApplicationWindow {
   default-width: "600";
@@ -16,18 +17,47 @@ template $ElocutionWindow : $AdwApplicationWindow {
       }
     }
     content: 
-    Label label {
-      label: "Hello, World!";
+    Box {
+      orientation: vertical;
+      halign: center;
 
-      styles [
-        "title-1",
-      ]
-    }
+      Frame {
+        margin-bottom: 12;
 
-    ;
-  }
+        ScrolledWindow {
+          height-request: 180;
+          width-request: 600;
 
-  ;
+          TextView textview {
+            bottom-margin: 12;
+            left-margin: 12;
+            right-margin: 12;
+            top-margin: 12;
+            editable: true;
+            cursor-visible: true;
+            wrap-mode: char;
+          }
+        }
+      }
+
+      Box {
+        orientation: horizontal;
+        halign: center;
+        spacing: 18;
+        margin-bottom: 18;
+
+        Button select {
+          halign: center;
+          label: _("Read");
+        }
+
+        Button clear {
+          halign: center;
+          label: _("Clear all");
+        }
+      }
+    };
+  };
 }
 
 menu primary_menu {
